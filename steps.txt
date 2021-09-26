@@ -1,0 +1,17 @@
+composer require tymon/jwt-auth --ignore-platform-reqs
+
+
+
+in config/app
+
+'providers' =>[
+     Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+]
+'aliases' => [
+     'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+     'JWTAuthFactory' => Tymon\JWTAuth\Facades\JWTAuthFactory::class,
+]
+
+
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+php artisan jwt:secret

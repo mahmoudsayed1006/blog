@@ -1,0 +1,43 @@
+<?php
+
+return [
+
+    'name_ar.required' => 'يرجى ادخال الاسم باللغه العربيه',
+    'name_en.required' => 'يرجى ادخال الاسم باللغه الانجليزيه',
+    'img.invalid' => 'الصوره غير صالحه',
+    'img.required'=>'يرجى رفع الصوره',
+    'notAllow'=>'غير مسموح ',
+    'name.required' => 'حقل الاسم الزامى',
+    'phone.required' => 'حقل الهاتف الزامى',
+    'password.required' => 'حقل الرقم السرى الزامى',
+    'type.required' => 'حقل النوع الزامى',
+    'interests.required' => 'حقل الاهتمامات الزامى',
+    'type.in' => 'النوع غير صحيح',
+    'confirm_password.required' => 'حقل تأكيد الباسورد الزامى',
+    'confirm_password.same' => 'حقل الرقم السرى لايساوى حقل تأكيد الرقم السرى',
+    'phone.unique' => 'رقم الهاتف موجود مسبقا',
+    'email.unique' => 'البريد الالكترونى موجود مسبقا',
+    'img' =>'الصوره غير صالحه',
+    'Unauthorized' => 'البيانات غير صحيحه',
+    'title_ar.required' => 'حقل العنوان بالغه العربيه مطلوب',
+    'title_en.required' => 'حقل العنوان باللغه الانجليزيه مطلوب',
+    'description_ar.required' => 'حقل الوصف باللغه العربيه مطلوب',
+    'description_en.required' => 'حقل الوصف باللغه الانجليزيه مطلوب',
+    'category_id.required' => 'حقل القسم مطلوب',
+    'user_id.required' => 'حقل المستخدم مطلوب',
+    'category_id.numeric' => 'حقل القسم قيمه رقميه',
+    'user_id.numeric' => 'حقل المستخدم قيمه رقميه',
+    'notFound'=>'غير موجود',
+    'InternalServerError'=>'حاول وقت لاحق',
+    'BadRequest'=>'فشل فالاتصال',
+    'comment.required' => 'حقل التعليق مطلوب',
+    'rate.required' => 'حقل التقييم مطلوب ',
+    'rate.invalid' =>'التقييم غير صحيح',
+    'post.found' =>'البوست  موجود بالقائمه',
+    'post.notFound'=>'البوست غير موجود بالقائمه',
+    'verifyCode.notMatch'=>'كود التفعيل غير صحيح',
+    'verifyCode.required' =>'حقل كود التفعيل مطلوب',
+    'currentEmail.required'=>'حقل البريد الالكترونى الحالى مطلوب',
+    'newEmail.required' =>'حقل البريد الالكترونى الجديد مطلوب'
+
+];
