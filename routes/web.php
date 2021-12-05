@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\chatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
+Route::get('/test', function () {
+    $actionId = "score_update";
+    $actionData = array("team1_score"=> 46);
+    event(new \App\Events\ActionEvent($actionId, $actionData));
+    dd('Event fired.');
+});
+Route::post('sendmessage', [chatController::class,'sendMessage']);
 
 Auth::routes();
 

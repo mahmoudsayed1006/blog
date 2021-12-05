@@ -3,6 +3,7 @@
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
+        "start": "node server.js",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
@@ -19,6 +20,17 @@
         "postcss": "^8.1.14",
         "resolve-url-loader": "^3.1.2",
         "sass": "^1.15.2",
-        "sass-loader": "^8.0.0"
+        "sass-loader": "^8.0.0",
+        "webpack-cli": "^4.8.0"
+    },
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "ioredis": "^4.27.9",
+        "laravel-echo": "^1.11.2",
+        "redis": "^3.1.2",
+        "redis-server": "^1.2.2",
+        "socket.io": "^3.1.2",
+        "socket.io-client": "^4.2.0"
     }
 }
